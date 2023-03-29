@@ -1,0 +1,330 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+
+}
+
+body {
+    width: 100%;
+    height: 768px;
+    background: #FFFFFF;
+}
+
+.container {
+    width: 100%;
+    height: 70px;
+    background: #EFEFEF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-outer-container {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 27px 0;
+    width: 81%;
+    margin: auto;
+
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+
+}
+
+.navlinks li a img {
+    margin: 0 8px;
+}
+
+.navlinks li a {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #2D3142;
+
+}
+
+.navlinks .active {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+
+    color: #8FB91C;
+
+}
+
+.main {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+.main-content {
+    margin: 48px 0 0 auto;
+    width: 66%;
+
+}
+
+.main-content a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 38px;
+    color: #8FB91C;
+    margin-right: 16px;
+
+}
+
+.right {
+    margin: 58px 0 0 auto;
+
+    width: 15%;
+
+
+
+}
+
+.right a {
+
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19px;
+
+    color: #000000;
+}
+
+#k {
+    width: 19.46px;
+    height: 12.66px;
+
+
+}
+
+.line {
+    height: 1px;
+    width: 81%;
+
+    margin: 8px auto;
+
+
+    background: #D3D3D3;
+}
+
+input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+}
+
+.file {
+
+    margin: 27px auto 0;
+    width: 81%;
+}
+
+.file a {
+    font-weight: 500;
+    font-size: 1.125rem;
+    line-height: 21px;
+
+    margin-left: 8px;
+
+    color: #2D3142;
+
+}
+
+/* cards */
+.cards {
+    display: flex;
+    margin: 16px auto;
+    width: 82.3%;
+    gap: 34px;
+    flex-wrap: wrap;
+}
+
+.cards-container {
+    width: 252px;
+    height: 172px;
+    filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+    position: relative;
+}
+
+.image {
+    width: 100%;
+    height: 172px;
+
+
+}
+
+.strau {
+    width: 100%;
+    height: 124px;
+}
+
+.cards-container input[type="checkbox"] {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #FFFFFF;
+
+    background: linear-gradient(360deg, #000000 -43.75%, rgba(0, 0, 0, 0) 95.83%);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-bottom {
+    display: flex;
+    position: absolute;
+
+    width: 100%;
+
+    height: 48px;
+    bottom: 0;
+    background: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+
+}
+
+.file-format {
+    position: absolute;
+
+    left: 10px;
+    top: 16px;
+
+
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
+}
+
+.xls {
+    position: absolute;
+    left: 16px;
+    top: 16px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #2D3142;
+    margin-left: 40px;
+    margin-top: 16px;
+}
+
+
+.upload {
+    width: 175px;
+    height: 50px;
+
+    position: relative;
+    top: 276px;
+    right: 129px;
+
+   
+    float: right;
+    background: #8FB91C;
+    border-style: none;
+    box-shadow: 0px 5px 12px rgba(143, 185, 28, 0.37);
+    border-radius: 4px;
+
+}
+
+.upload-type {
+    margin: 15px 50px;
+    display: flex;
+
+}
+
+.upload-type img {
+    width: 16px;
+    height: 16px;
+}
+
+span {
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 19px;
+    margin-left: 8px;
+    color: #FFFFFF;
+}
+
+@media only screen and (max-width:700px) {
+    .cards {
+        flex-direction: column;
+        gap: 17px;
+        width: 65%;
+    }
+
+    .upload {
+        margin-top: 10%;
+        margin-right: 22%;
+    }
+
+    .main-content {
+        margin-top: 24px;
+        margin-left: 15%;
+    }
+
+    .main-content a {
+
+        line-height: 17px;
+        font-size: 1rem;
+    }
+
+    .right {
+        margin-top: 24px;
+
+        margin-right: 50px;
+        display: flex;
+    }
+
+    .right a {
+        font-size: 11px;
+    }
+
+    #k {
+        width: 12px;
+        height: 8px;
+    }
+
+    .line {
+        margin-top: 8px;
+        width: 70%;
+        margin-right: 60px;
+    }
+
+    .navbar-outer-container {
+
+        width: 70%;
+
+    }
+
+    #logo {
+        width: 35%;
+    }
+
+    .file {
+        margin-top: 14px;
+        margin-left: 15%;
+    }
+
+    .file a {
+        font-size: 1rem;
+    }
+
+    .upload {
+        top: 0;
+        right: 7%;
+    }
+}
